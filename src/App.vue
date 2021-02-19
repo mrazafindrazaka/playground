@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 class="text-center text-white bg-dark p-3 m-0">Miranto's playground</h1>
+  <div v-if="$route.name !== 'Home'" class="d-flex justify-content-center align-items-center bg-danger p-3">
+    <router-link class="btn btn-dark" to="/">Back to menu</router-link>
+  </div>
+  <router-view/>
+  <Loading/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Loading from '@/components/Loading';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Loading
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+
 </style>
