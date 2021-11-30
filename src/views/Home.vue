@@ -17,6 +17,7 @@ export default {
     return {
       menus: [
         { path: '/crypto', name: 'Crypto' },
+        { path: '/todolist', name: 'ToDoList' },
       ]
     }
   }

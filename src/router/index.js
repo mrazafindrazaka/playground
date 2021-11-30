@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home'
-import Crypto from '../views/Crypto'
+import Home from '@/views/Home'
+import Crypto from '@/views/Crypto'
+import ToDoList from "@/views/ToDoList";
 
 const routes = [
   {
@@ -12,7 +13,12 @@ const routes = [
     path: '/crypto',
     name: 'Crypto',
     component: Crypto
-  }
+  },
+  {
+    path: '/todolist',
+    name: 'ToDoList',
+    component: ToDoList
+  },
 ]
 
 const router = createRouter({

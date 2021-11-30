@@ -1,5 +1,7 @@
 # playground
 
+Little board with mini projects, made with Vue 3 and Bootstrap 5
+
 ## Project setup
 ```
 npm install
